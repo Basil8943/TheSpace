@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block body %}<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12" style="height:500;">
+            <div class="banner">
+                <div class="banner-text">
+                    <h2><b>TODO</b></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <form method="post" class="p-3 shadow" >
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <h3 style="border:2px solid yellow;">Delete the Task?</h3>
+                        <input type="submit" class="btn btn-success" value="delete">
+                </form>
+            </div>
+        </div>
+ </div>
+
+{% endblock %}
