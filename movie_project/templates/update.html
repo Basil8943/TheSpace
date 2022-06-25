@@ -1,0 +1,9 @@
+{% extends 'style.html' %}
+{% block body %}
+<form style="background-color:primary;" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="update">
+    <a class="btn btn-light" href="/">HOME</a>
+</form>
+{% endblock %}
