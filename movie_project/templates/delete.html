@@ -1,9 +1,0 @@
-{% extends 'style.html' %}
-{% block body %}
-<form method="POST">
-    {% csrf_token %}
-    Are you sure???
-    <input type="submit" value="DELETE">
-    <a class="btn-btn-dark" href="/">BACK</a>
-</form>
-{% endblock %}
